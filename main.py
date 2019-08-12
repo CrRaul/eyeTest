@@ -1,22 +1,8 @@
-
-import time
-
 from tkinter import *
 from PIL import ImageTk, Image
-from tkinter import filedialog
-import ntpath
-import cv2
 import numpy as np
-import math
-
 import random
-
-import matplotlib
-import matplotlib.pyplot as plt
-import skimage.io as io
-from skimage.filters import threshold_otsu
-from skimage import img_as_ubyte
-#"load image data"
+import cv2
 
 class Window(Frame):
 
