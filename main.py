@@ -81,8 +81,17 @@ class Window(Frame):
 
 
     def validatePos(self,cX, cY):
+        sQx = self.square[1] * 200
+        sQy = self.square[0] * 200
+
+        print(sQx, sQy)
+        print(cX, cY)
+
+        if sQx > cX or sQx + 200 < cX or sQy > cY or sQy + 200 < cY:
+            self.scoreNo += 1
+            return
+
         self.scoreYes += 1
-        self.scoreNo += 1
 
     def updateScore(self):
         self.textYes.configure(text = str(self.scoreYes))
